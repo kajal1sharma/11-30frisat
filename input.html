@@ -5,8 +5,10 @@
 </head>
 <body>
     <form action="action.php">
-       
+       <fieldset>
+        <legend>Interest and hobbies</legend>
         <p>
+            
             <label>
                 upload Files
             </label>
@@ -24,11 +26,36 @@
             <label>
                 birthdate
             </label>
-            <input type="date" />
+            <input type="date" required />
         </p>
         <p>
+            <label>write something about yourself</label>
+            <textarea>
+
+            </textarea>
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <p>
+
+        </p>
+        <p>
+            <p>My hobbies are</p>
+            <label>chess</label>
+            <input type="checkbox" name="hobby" value="chess" >
+            <label>badminton</label>
+            <input type="checkbox" name="hobby" value="badminton">
+            <label>Tennis</label>
+            <input type="checkbox" name="hobby" value="tennis">
+            <label>drawing</label>
+            <input type="checkbox" name="hobby" value="drawing">
+
+        </p>
+        <p>
+
             <!-- <label for="firstname" >Name</label> -->
-            <input type="text" name="firstname" placeholder="lastname" value="nita" readonly/>
+            <input type="text" multiple name="firstname" placeholder="lastname" value="nita" readonly/>
         </p>
         <p>
             <input type="text" value="2342463564356356" name="userid" hidden>
@@ -55,9 +82,9 @@
                 <input type="radio" value="male" name="gender">
            
             <label for="gender">FeMale  </label>
-                <input type="radio" value="female" name="gender1">
+                <input type="radio" value="female" name="gender">
             <label for="gender">3rd</label>
-                <input type="radio" value="3rdgender" name="gender2">
+                <input type="radio" value="3rdgender" name="gender">
         </p>
         <p>
             <label for="country">Country</label>
@@ -106,6 +133,7 @@
         <p>
             <input type="button" value="check">
         </p>
+    </fieldset>
     </form>
 </body>
 </html>
