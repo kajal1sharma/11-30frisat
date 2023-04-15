@@ -5,32 +5,63 @@
 </head>
 <body>
     <form action="action.php">
-        <label for="firstname" >Name</label>
-        <input type="text" name="firstname"/>
-        <br/>
-        <label for="lastname">SurName</label>
-        <input type="text" name="lastname" max="5"/>
-        <br/>
-        <label for="password">passowrd</label>
-        <input name="passowrd" type="password" maxlength=8 />
-        
-        <label for="phone">Phone</label>
-        <input type="number" name="phone" max="100" min="0" step="10"/>
-        <br/>
-        <label>Email</label>
-        <input type="email" name="email" autocomplete />
-        <br/>
-        <label>Gender</label>
-        <label for="gender">Male </label>
-            <input type="radio" value="male" name="gender">
        
-        <label for="gender">FeMale  </label>
-            <input type="radio" value="female" name="gender1">
-        <label for="gender">3rd</label>
-            <input type="radio" value="3rdgender" name="gender2">
-      
+        <p>
+            <label>
+                upload Files
+            </label>
+            <input type="file">
+        </p>
+        <p>
+            <label>color</label>
+            <input type="color">
+        </p>
+        <p>
+            <label>month</label>
+            <input type="month">
+        </p>
+        <p>
+            <label>
+                birthdate
+            </label>
+            <input type="date" />
+        </p>
+        <p>
+            <!-- <label for="firstname" >Name</label> -->
+            <input type="text" name="firstname" placeholder="lastname" value="nita" readonly/>
+        </p>
+        <p>
+            <input type="text" value="2342463564356356" name="userid" hidden>
+        </p>
+        <p>
+            <label for="lastname">SurName</label>
+            <input type="text" name="lastname">
+        </p>
+        <p>
+            <label for="password">passowrd</label>
+            <input name="passowrd" type="password" maxlength=8 />
+        </p>
+        <p>
+            <label for="phone">Phone</label>
+            <input type="number" name="phone" max="100" min="0" step="10"/>
+        </p>
+        <p>
+            <label>Email</label>
+            <input type="email" name="email" autocomplete />
+        </p>
+        <p>
+            <label>Gender</label>
+            <label for="gender">Male </label>
+                <input type="radio" value="male" name="gender">
+           
+            <label for="gender">FeMale  </label>
+                <input type="radio" value="female" name="gender1">
+            <label for="gender">3rd</label>
+                <input type="radio" value="3rdgender" name="gender2">
+        </p>
+        <p>
             <label for="country">Country</label>
-            <br/>
+            <br>
             <select name="country">
                 <optgroup label="asia">
                     <option value="india">India</option>
@@ -48,8 +79,8 @@
                     <option value="sa">South africa</option>
                 </optgroup>
             </select>
-
-            <br/>
+        </p>
+        <p>
             <label for="favfood">Fav Food</label>
             
             <input list="favfood" type="text" name="favfood">
@@ -61,6 +92,20 @@
 
                 <option value="milkshake">
             </datalist>
+        </p>
+        <p>
+            <label>Submit</label>
+            <input type="image" width=" 50px" height="50px" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg">
+        </p>
+        <p>
+            <input type="submit">
+        </p>
+        <p>
+            <input type="reset">
+        </p>
+        <p>
+            <input type="button" value="check">
+        </p>
     </form>
 </body>
 </html>
