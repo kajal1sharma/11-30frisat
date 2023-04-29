@@ -1,0 +1,63 @@
+*{
+  background-color: black; 
+  margin:0px;  
+}
+.headerimage
+{
+    width:100px;
+    height:20px;
+    float:left;
+    padding:10px;
+}
+.navbar{
+    color:white;
+}
+.navbarlist{
+    list-style: none;
+    float:right;
+    padding:10px;
+    
+}
+p{
+    display: none;
+}
+@media screen and (min-width:600px) {
+    .navbarlist{
+        float:none;
+       clear:left;
+       display: none;
+    }
+    p{
+        float:right;
+        display: block;
+
+    }
+    p>span{
+        padding:30px;
+    }
+    
+}
+
+@media screen and (min-width:1000px) {
+    
+
+    p>span{
+        font-size: 30px;
+        padding:40px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
